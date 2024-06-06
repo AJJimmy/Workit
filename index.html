@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workit</title>
+    <link rel="stylesheet" href="style.css"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="home">
+        <nav>
+            <img src="assests/logo.png" alt="logo" id="logo" height="80px" width="350px">
+            <ul class="navigation">
+                <li><a href="#home" id="active" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact"class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+
+        <div class="content">
+            <div class="contentBx">
+                <h2>A Healthy Body<br>
+                And a Healthy Mind</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#signup">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="social">
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/work-it-out"><img src="assests/facebook.png"></a></li>
+                <li><a href="https://www.x.com/work-it-out"><img src="assests/x.png" width="40px" height="40px"></a></li>
+                <li><a href="https://www.instagram/work-it-out"><img src="assests/instagram.png"></a></li>
+            </ul>
+            </div>
+
+        <div id="about">
+            <div class="writeup">
+                <h1> It's Time to Work it Out!</h1>
+          
+                <p id="content">
+                  Welcome to <b>workit</b>, where we prioritize the comprehensive well-being of women through specialized physiotherapy. I am Aanuoluwapo Adejimi, BMR(PT), a seasoned women’s health physiotherapist, and I am 
+                  excited to guide you on your journey to optimal health.With a profound commitment to women’s wellness, I bring over 2 years of experience in addressing a 
+                  spectrum of issues unique to women. From pelvic floor concerns and prenatal care to postnatal rehabilitation,
+                  my practice is grounded in evidence-based approaches tailored to meet your specific needs.<br><br>
+                  At <b>workit</b>, we understand the nuanced nature of women’s health. Our mission is to empower you through 
+                  personalized care plans that consider not only the physical aspects but also the emotional and mental 
+                  dimensions of your well-being. We believe in fostering a supportive environment where you can openly discuss 
+                  your concerns and actively participate in your healing process.<br><br>
+                  Our services extend beyond traditional physiotherapy, encompassing education and guidance on lifestyle 
+                  modifications to promote lasting wellness. Whether you are navigating pregnancy, recovering from childbirth, 
+                  or managing pelvic health concerns, we are here to provide compassionate care and assist you in reclaiming 
+                  your strength and confidence.<br><br>
+                </p>
+              </div>
+          
+              <div class="img">
+              <img src="assests/about1.jpg" alt="about1" class="about-img">
+              <img src="assests/about2.jpg" alt="about2" class="about-img">
+              <img src="assests/about3.jpg" alt="about3" class="about-img">
+              </div>
+          
+              <div class="learn-writeup">
+              <p id="above">Explore our website to learn more about the services we offer, testimonials from satisfied clients, and 
+              valuable resources to support your health journey. Take a proactive step towards a healthier you, and let
+              <b>workit</b> be your partner in women’s health physiotherapy.</p>
+              <a href="#signup" id="learn">Learn More</a>
+              </div>
+        </div>
+
+
+              <div id="signup">
+                <form action="#" class="signup-form">
+                <h1>Register</h1>
+                    <label for="fname">First Name</label>
+                    <input type="text"  name="fname" id="fname" placeholder="John">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Doe">
+                    <label for="gender">Gender</label>
+                    <select>
+                        <option value="select">Please select--</option>            
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="not to say">Prefer not to say</option>
+                    </select>
+                    <label for="country">Country</label>
+                    <input type="text" placeholder="e.g Nigeria">
+                    <label for="state">State of residence</label>
+                    <input type="text" placeholder="e.g Lagos">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="JDOE">
+                    <label for="pword">Enter Password</label>
+                    <input type="password" name="pword" placeholder="******">
+                    <label for="cpword">Confirm Password</label>
+                    <input type="password" name="cpword" placeholder="******">
+                    <button id="signup-submit">Submit</button>
+                    <p class="message">Already a member? <a id="login" href="#">Login</a></p>
+                    </form>
+
+                    <form action="#" class="login-form">
+                    <h1>
+                        Login
+                    </h1>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="username">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password">
+                    <i class="far fa-eye" id="togglePassword"></i>
+                    <button>Submit</button>
+                    <p class="message"><a href="#" id="instead">Sign up instead</a></p>
+                    </form>
+                </div>
+
+              <div id="contact">
+                <h1>Contact Us</h1>
+                <label for="fname">Full Name</label>
+                <input type="text" name="fname" id="fname"/>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
+                <label for="message">Message</label>
+                <textarea name="message" id="textarea" rows="10" cols="30">Type your message here..</textarea>
+                <div id="submit-reset">
+                <button id="submit-btn" class="buttons">Submit</button>
+                <button id="reset-btn" class="buttons">Reset</button>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div id="footer-socials">
+                <li class="footer-link"><a href="https://www.facebook.com/work-it-out"><img src="assests/facebook.png" width="20px" height="20px"></a></li>
+                <li class="footer-link"><a href="https://www.x.com/work-it-out"><img src="assests/x.png" width="20px" height="20px"></a></li>
+                <li class="footer-link"><a href="https://www.instagram/work-it-out"><img src="assests/instagram.png" width="20px" height="20px"></a></li>
+                </div>
+
+                <p class="copy">&copy; Copyright 2023. Workit. All rights reserved.</p>
+            </div>
+ </div>
+ <script src="./script.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
